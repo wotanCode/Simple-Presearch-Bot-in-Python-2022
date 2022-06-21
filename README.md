@@ -14,7 +14,9 @@ This is not necessarily a requirement but I haven't tested it in other instances
 
 ### How work
 - You need to log previously in presearch
+- In the presearch_ch.py file you have to modify the path ("user-data-dir=C:\\Users\\pedro\\AppData\\Local\\Google\\Chrome\\User Data") to the corresponding path on your computer
 - Do in the console: `py presearch_ch.py`
+- Earn pre tokens
 
 ### TODO:
 - Finish the firefox bot.
