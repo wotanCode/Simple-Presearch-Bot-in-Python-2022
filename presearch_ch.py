@@ -1,3 +1,5 @@
+# General importss
+import time
 from selenium import webdriver
 
 # Imports for chrome
@@ -8,6 +10,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+
+
 
 # BEGIN
 print("Starting presearch bot wotanCode...")
@@ -22,4 +26,14 @@ options.add_argument("user-data-dir=C:\\Users\\pedro\\AppData\\Local\\Google\\Ch
 browser = webdriver.Chrome(options=options, service=driver_path)
 
 # Start
-browser.get('https://www.presearch.com')
+def search(item):
+  print ("Searching for: " + item)
+  browser.get('https://presearch.com/search?q=' + item)
+  print ("Searching for: " + item + " done")
+  time.sleep(10)
+
+searching = open("search.txt", "r")
+
+for text in searching.readlines():
+  search(text)
+  print('END')
