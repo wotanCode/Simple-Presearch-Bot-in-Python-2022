@@ -25,9 +25,9 @@ browser = webdriver.Chrome(options=options, service=driver_path)
 
 # Start
 def search(item):
+  print ("Searching for: " + item)
   browser.get('https://presearch.com/search?q=' + item)
   time.sleep(10)
-  print ("Searching for: " + item + " done")
 
 searching = open("search.txt", "r")
 
