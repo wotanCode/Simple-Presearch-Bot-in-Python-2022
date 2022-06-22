@@ -15,6 +15,7 @@ This is not necessarily a requirement but I haven't tested it in other instances
 ### How work
 - You need to log previously in presearch
 - In the presearch_ch.py file you have to modify the path ("user-data-dir=C:\\Users\\pedro\\AppData\\Local\\Google\\Chrome\\User Data") to the corresponding path on your computer
+- Download webdriver for chrome according to your version and place the .exe in the webdriver folder
 - Do in the console: `py presearch_ch.py`
 - Earn `pre` tokens
 
