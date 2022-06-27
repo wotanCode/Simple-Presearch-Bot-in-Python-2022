@@ -36,7 +36,7 @@ searchingList = searching.readlines()
 
 # start the search
 # 30 is the limit of searches per day
-for text in range(5):
+for text in range(30):
   print ('Search number: ' + str(text+1))
   mySearch = random.choice(searchingList) + " " + random.choice(searchingList) + " " + random.choice(searchingList) + " " + random.choice(searchingList)
   search(mySearch)
