@@ -26,5 +26,4 @@ This is not necessarily a requirement but I haven't tested it in other instances
 <hr/>
 
 ### TODO:
-- Realizar busquedas aleatorias en base a combinacioón de las palabras
 - Finish the firefox bot.
