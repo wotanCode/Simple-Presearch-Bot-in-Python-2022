@@ -1,6 +1,5 @@
-# General imports
+# General importss
 import time
-import random
 from selenium import webdriver
 
 # Imports for chrome
@@ -24,22 +23,16 @@ options = webdriver.ChromeOptions()
 options.add_argument("user-data-dir=C:\\Users\\pedro\\AppData\\Local\\Google\\Chrome\\User Data")
 browser = webdriver.Chrome(options=options, service=driver_path)
 
-# function to search
+# Start
 def search(item):
   print ("Searching for: " + item)
   browser.get('https://presearch.com/search?q=' + item)
   time.sleep(10)
 
-# Prepare the list of items
 searching = open("search.txt", "r")
-searchingList = searching.readlines()
 
-# start the search
-# 30 is the limit of searches per day
-for text in range(30):
-  print 
-  mySearch = random.choice(searchingList) + " " + random.choice(searchingList) + " " + random.choice(searchingList)
-  search(mySearch)
+for text in searching.readlines():
+  search(text)
 
 # END
 browser.close()
