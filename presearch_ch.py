@@ -28,7 +28,7 @@ browser = webdriver.Chrome(options=options, service=driver_path)
 def search(item):
   print ("Searching for: " + item)
   browser.get('https://presearch.com/search?q=' + item)
-  time.sleep(10)
+  time.sleep(12)
 
 # Prepare the list of items
 searching = open("search.txt", "r")
@@ -36,9 +36,9 @@ searchingList = searching.readlines()
 
 # start the search
 # 30 is the limit of searches per day
-for text in range(30):
-  print 
-  mySearch = random.choice(searchingList) + " " + random.choice(searchingList) + " " + random.choice(searchingList)
+for text in range(5):
+  print ('Search number: ' + str(text+1))
+  mySearch = random.choice(searchingList) + " " + random.choice(searchingList) + " " + random.choice(searchingList) + " " + random.choice(searchingList)
   search(mySearch)
 
 # END
