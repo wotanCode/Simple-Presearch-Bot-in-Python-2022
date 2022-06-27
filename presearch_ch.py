@@ -33,4 +33,7 @@ searching = open("search.txt", "r")
 
 for text in searching.readlines():
   search(text)
+
+# END
+browser.close()
 print('END')
