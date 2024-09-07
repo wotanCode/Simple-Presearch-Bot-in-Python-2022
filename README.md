@@ -1,4 +1,4 @@
-# Presearch-Bot by pedroelhumano
+# Presearch-Bot by Pedro Yanez
 
 ![presearch](presearch.png)
 
