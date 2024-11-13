@@ -25,5 +25,5 @@ This is not necessarily a requirement but I haven't tested it in other instances
 
 <hr/>
 
-License
+### License
 This project is licensed under the MIT License.
